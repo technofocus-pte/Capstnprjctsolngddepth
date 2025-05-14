@@ -2,34 +2,34 @@
 
 **Overview**
 
-In this challenge, you’ll work with a Flask-based conversational
-application deployed as an Azure Web App. The solution uses **Azure
-OpenAI for LLM-powered insights**, **Azure AI Search for semantic
-document retrieval**, and a **PostgreSQL database** to simulate live
-vehicle telemetry. Embeddings from PostgreSQL data are generated via
-Azure OpenAI and pushed to Azure Search for real-time vector-based
-search.
+In the Capstone transportation and logistics sector, vehicle breakdowns and inefficiencies significantly impact operations, leading to increased costs and delays. Traditional methods of vehicle maintenance are often reactive, waiting for issues to arise before addressing them. This project proposes an Intelligent Maintenance Prediction Service to address this challenge, leveraging advanced machine learning and cloud technologies to predict maintenance needs before they occur.
+### Contoso Corp challenges
+Fleet operators face significant challenges related to:
+Unexpected Vehicle Downtime: Unscheduled maintenance leads to financial losses and customer dissatisfaction.
+Inefficient Maintenance Schedules: Reactive maintenance strategies increase operational costs.
+Lack of Real-Time Insights: Difficulty in analyzing sensor data and operational metrics in real time.
+Data Management Overload: Manual data handling leads to errors and inefficiencies.
+These challenges hinder fleet managers from maintaining optimal vehicle performance and achieving cost-effective operations
 
-If a vehicle fault requires manual escalation, the app triggers a
-**Logic App workflow**, notifying a human engineer via email. This
-project demonstrates how **AI-powered insights**, **vector search**, and
-**human-in-the-loop workflows** can be combined to optimize fleet
-performance and uptime.
+### Solution
+The Next-Gen Fleet Optimization with Azure AI chat app Platform will:
+Predict Maintenance Needs: Utilize machine learning models to predict maintenance requirements based on vehicle operational metrics.
+Real-Time Monitoring: Integrate IoT sensor data and GPS tracking for real-time insights.
+Seamless Integration: Store, manage, and query fleet data using Azure Database for PostgreSQL, enabling efficient data handling.
+Scalable Infrastructure: Leverage Azure AI and Azure OpenAI services to ensure scalability and flexibility.
+![image](https://github.com/user-attachments/assets/cd3b852b-f38a-4774-981e-d828f7bc5f5e)
+
 
 **Objective**
 
 By the end of this hands-on lab, you will:
 
-- Deploy an AI-powered fleet assistant using **Flask**, **Azure
-  OpenAI**, and **Azure Search**
+- Train and deploy a predictive maintenance model to classify vehicles into "Immediate Maintenance," "Scheduled Maintenance," or "No Maintenance Required."
+- Build a scalable data pipeline using Azure Data Factory and PostgreSQL to manage large datasets.
+- Integrate Azure OpenAI for natural language-based fleet management insights.
+- Deploy a web-based platform for fleet managers to monitor real-time vehicle health and maintenance needs.
+- Enable cost and resource optimization through data-driven decision-making
 
-- Generate and **push vector embeddings** from PostgreSQL to Azure
-  Search
-
-- Create a **chat-based interface** to diagnose and predict vehicle
-  issues
-
-- Use **Logic Apps** to send escalation alerts to human engineers
 
 **Introduction**
 
@@ -69,35 +69,23 @@ Participants should have:
 
 ## Component Overview
 
-[TABLE]
+**Azure Machine Learning :**
+	For training, deploying, and managing ML models using cleaned vehicle sensor data
+**PostgreSQL with Azure AI extension :**
+	Acts as the vector store and backend database, with built-in vector search and LLM scoring
+**Azure OpenAI :**
+	Used for embeddings and natural language processing in the chatbot
+**Azure Data Factory :**
+	Automates data ingestion and cleaning from raw vehicle logs
+**Azure AI Search :**
+	Enables semantic search on documents and FAQs using RAG
+**Azure Web App :**
+	Hosts the chat application and serves ML + RAG responses to end users
+**Azure Key Vault :**
+	 Securely stores API keys and connection strings for safe access
+**Flask (Python) :**
+	 Web framework used to build and serve the chatbot locally and on the cloud
 
-Scenario :
-
-**Contoso Transport Inc., a leading logistics provider, has launched an
-AI-powered fleet maintenance assistant to reduce downtime and improve
-operational efficiency.**
-
-Drivers interact with the **"Contoso SmartFleet Chatbot"**, a web app
-built using **Flask and Azure App Service**. When a vehicle issue or
-query is entered, the message is processed using **Azure OpenAI** for
-context understanding.
-
-The system performs **vector-based semantic search** on vehicle
-maintenance documents stored in **Azure AI Search**. These embeddings
-were generated using Azure OpenAI and indexed alongside metadata
-exported from a **PostgreSQL vehicle telemetry database**.
-
-All real-time interactions and responses are managed through a
-**FastAPI-based backend**, and system logs or diagnostic decisions are
-optionally stored in **Cosmos DB** for traceability. If a driver’s
-vehicle needs urgent service, a **Logic App** is triggered to notify the
-nearest service center and escalate it to a human maintenance engineer.
-
-This smart architecture ensures proactive alerts, real-time support, and
-an intelligent fusion of **AI insights + human judgment**, resulting in
-improved fleet uptime, lower operational costs, and happier drivers.
-
-Bottom of Form
 
 ## Exercise 1 : Deploy the resources in Azure 
 
