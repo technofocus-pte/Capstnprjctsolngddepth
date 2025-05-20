@@ -420,7 +420,7 @@ incorrect.](./media/image43.png)
 
   ![](./media/image48.png)
 
-6. Search for **blob**, select **Azure blob storage** and click on **Continue**.
+6. Search for +++blob+++, select **Azure blob storage** and click on **Continue**.
 
   ![](./media/image49.png)
 
