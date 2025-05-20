@@ -212,7 +212,7 @@ incorrect.](./media/image25.png)
 7.  Click on **Connect** from left navigation menu .Select
     **flexibleserverdb** as database,expand Connect from browser or
     locallay and copy the command. Click on cloud slice icon on top
-    navigation menu.
+    navigation menu.Also, make a note of PG_HOST value to use in AML studio- notebook
 
   ![](./media/image27.png)
 
