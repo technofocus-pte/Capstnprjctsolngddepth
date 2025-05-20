@@ -662,7 +662,7 @@ content may be incorrect.](./media/image61.png)
 
    ![](./media/image103.png)
 
-7.  Run **requirements.tx**t cell to install all dependencies.
+7.  Run **requirements.txt** cell to install all dependencies.
 
   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image104.png)
 
