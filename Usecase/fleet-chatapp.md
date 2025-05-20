@@ -85,86 +85,88 @@ Azure data factory
 
 ### Task 1 : Set up environment.
 
-1.  Open a browser and go to +++https:\\portal.azure.com+++ and sign in
+1.  Open a browser and go to +++https://portal.azure.com+++ and sign in
     with your Azure subscription account.
 
-2.  Click on **Cloud Shell** on top navigation menu and select **Bash.**
+    **Username**: +++@lab.CloudPortalCredential(User1).Username+++
 
-![](./media/image1.png)
+    **Password**: +++@lab.CloudPortalCredential(User1).Password+++
+
+3.  Click on **Cloud Shell** on top navigation menu and select **Bash.**
+
+  ![](./media/image1.png)
 
 3.  Select **No storage account required** and select your **Azure
     subscription** and then click on **Apply** button.
 
-![](./media/image2.png)
+  ![](./media/image2.png)
 
 4.  **Run below command to clone the repo**
 
-+++git clone https://github.com/technofocus-pte/TFFleetOptmztn.git+++
+  +++git clone https://github.com/technofocus-pte/TFFleetOptmztn.git+++
 
-![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image3.png)
+  ![A screenshot of a computer AI-generated content may be incorrect.](./media/image3.png)
 
 5.  Run below commands to navigate to the folder and provide permission
     to the file to run.
 
-  +++cd TFFleetOptmztn/+++
+   +++cd TFFleetOptmztn/+++
 
    +++chmod +x setup.sh+++
 
- ![A screenshot of a computer screen AI-generated content may be incorrect.](./media/image4.png)
+   ![A screenshot of a computer screen AI-generated content may be incorrect.](./media/image4.png)
 
 6.  Run below setup script to deploy all the required resources.for the
     prompt Enter the name of an existing Azure Resource Group: enter
     **ResourceGroup1.** The deployment take20-30 to deploy all
     resources.
 
-+++./setup.sh+++
+  +++./setup.sh+++
 
- ![A screenshot of a computer screen AI-generated content may be
- incorrect.](./media/image5.png)
+   ![A screenshot of a computer screen AI-generated content may be  incorrect.](./media/image5.png)
 
-![A screenshot of a computer program AI-generated content may be
+  ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image6.png)
 
-![A screenshot of a computer program AI-generated content may be
+  ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image7.png)
 
-![A screenshot of a computer program AI-generated content may be
+  ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image8.png)
 
-![A screenshot of a computer AI-generated content may be
+  ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image9.png)
 
-![A screenshot of a computer screen AI-generated content may be
+  ![A screenshot of a computer screen AI-generated content may be
 incorrect.](./media/image10.png)
 
-![A screenshot of a computer screen AI-generated content may be
+  ![A screenshot of a computer screen AI-generated content may be
 incorrect.](./media/image11.png)
 
-![A screenshot of a computer screen AI-generated content may be
+  ![A screenshot of a computer screen AI-generated content may be
 incorrect.](./media/image12.png)
 
-![A screenshot of a computer program AI-generated content may be
+  ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image13.png)
 
-![A screenshot of a computer program AI-generated content may be
+  ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image14.png)
 
-![A screenshot of a computer screen AI-generated content may be
+  ![A screenshot of a computer screen AI-generated content may be
 incorrect.](./media/image15.png)
 
-![A screenshot of a computer program AI-generated content may be
+  ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image16.png)
 
 ### Task 2 : Check deployed resources in Azure
 
 1.  On home page of Azure portal, click on Resource group tile.
 
-![](./media/image17.png)
+  ![](./media/image17.png)
 
 2.  Click on your resource group name.
 
-> ![](./media/image18.png)
+  ![](./media/image18.png)
 
 3.  Make sure below resources are deployed.
 
@@ -176,56 +178,56 @@ incorrect.](./media/image16.png)
 
  ![A screenshot of a computer AI-generated content may be incorrect.](./media/image19.png)
 
-![A screenshot of a computer AI-generated content may be incorrect.](./media/image20.png)
+  ![A screenshot of a computer AI-generated content may be incorrect.](./media/image20.png)
 
 ### Task 3 : Create a tables in Azure PostgreSQL
 
 1.  Click on Azure PostgreSQL server name.
 
-![](./media/image21.png)
+  ![](./media/image21.png)
 
 2.  From left navigation menu, expand **Settings -> Networking**
     .Select **Allow public access from any azure service within Azure
     to this server** check box, click on **Add current IP address((your
     IP address)** and then click on **Save** button
 
-![](./media/image22.png)
+  ![](./media/image22.png)
 
 3.  Wait for the configuration to be successful.
 
-![A screenshot of a computer AI-generated content may be
+  ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image23.png)
 
 4.  **Click on Server parameters and seach for extensions. Select vector** and **azure-ai extensions** and then click on **Save**
 
-![](./media/image24.png)
+  ![](./media/image24.png)
 
 5.  Wait for the deployment to complete.
 
-![A screenshot of a computer AI-generated content may be
+  ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image25.png)
 
 6.  Click on **Go to resource.**
 
-![](./media/image26.png)
+  ![](./media/image26.png)
 
 7.  Click on **Connect** from left navigation menu .Select
     **flexibleserverdb** as database,expand Connect from browser or
     locallay and copy the command. Click on cloud slice icon on top
     navigation menu.
 
-![](./media/image27.png)
+  ![](./media/image27.png)
 
 8.  Enter the command then enter password for user citus as :+++Fhtest208+++ and press Enter.
 
-![A screenshot of a computer AI-generated content may be
+  ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image28.png)
 
 9.  Run below command to allow access.
 
-+++GRANT CREATE ON DATABASE flexibleserverdb TO citus;+++
+  +++GRANT CREATE ON DATABASE flexibleserverdb TO citus;+++
 
-![A screenshot of a computer AI-generated content may be
+  ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image29.png)
 
 10. Run the below command to create a **contosofleet** table.
