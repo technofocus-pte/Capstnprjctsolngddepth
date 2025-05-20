@@ -373,8 +373,7 @@ incorrect.](./media/image35.png)
 
   ![](./media/image38.png)
 
-4.  Search for **postgresql** and select **Azure Database for
-    PostgreSQL** and then click on **Connect**.
+4.  Search for +++postgresql+++ and select **Azure Database for PostgreSQL** and then click on **Connect**.
 
   ![](./media/image39.png)
 
