@@ -490,7 +490,7 @@ content may be incorrect.](./media/image61.png)
 
   ![](./media/image65.png)
 
-2. Name the output stream – **datacleanpostsql** and select    **AzurePostgreSqlcontosofleettable** dataset
+2. Name the output stream – +++datacleanpostsql+++ and select    **AzurePostgreSqlcontosofleettable** dataset
 
   ![](./media/image66.png)
 
