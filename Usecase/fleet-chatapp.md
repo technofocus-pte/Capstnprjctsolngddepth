@@ -103,14 +103,14 @@ Azure data factory
 
 4.  **Run below command to clone the repo**
 
-  +++https://github.com/ManjulaChintharla/Fleet-Optimization-with-Azure-AI-and-Machine-Learning.git+++
+  +++https://github.com/technofocus-pte/TFFleetOptmztn.git+++
 
   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image3.png)
 
 5.  Run below commands to navigate to the folder and provide permission
     to the file to run.
 
-   +++cd Fleet-Optimization-with-Azure-AI-and-Machine-Learning/+++
+   +++cd TFFleetOptmztn/+++
 
    +++chmod +x setup.sh+++
 
@@ -635,7 +635,7 @@ content may be incorrect.](./media/image61.png)
 
 5.  Click on **Terminal** and run the below command to clone the repo.
 
-  +++https://github.com/ManjulaChintharla/Fleet-Optimization-with-Azure-AI-and-Machine-Learning.git+++
+  +++https://github.com/technofocus-pte/TFFleetOptmztn.git+++
 
  ![](./media/image98.png)
 
