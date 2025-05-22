@@ -106,7 +106,7 @@ Azure data factory
 
 4.  **Run below command to clone the repo**
 
-  +++https://github.com/technofocus-pte/TFFleetOptmztn.git+++
+  +++git clone https://github.com/technofocus-pte/TFFleetOptmztn.git+++
 
   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image3.png)
 
@@ -638,7 +638,7 @@ content may be incorrect.](./media/image61.png)
 
 5.  Click on **Terminal** and run the below command to clone the repo.
 
-  +++https://github.com/technofocus-pte/TFFleetOptmztn.git+++
+  +++git clone https://github.com/technofocus-pte/TFFleetOptmztn.git+++
 
  ![](./media/image98.png)
 
