@@ -206,9 +206,73 @@ AZURE_OPENAI_CHAT_DEPLOYMENT=gpt-35-turbo
   -  **Azure OpenAI**
   - **Azure Search service**
 
- ![A screenshot of a computer AI-generated content may be incorrect.](./media/image19.png)
+   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image19.png)
 
-  ![A screenshot of a computer AI-generated content may be incorrect.](./media/image20.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image20.png)
+
+  ### Task 2 : Check deployed resources in Azure
+
+4.  Expand Essentials and copy Subscription ID and paste in the
+    environment vaiable notebook next to **SUBSCRIPTIONID** variable.
+
+ ![](./media/image250.png)
+ 
+ ![](./media/image251.png)
+
+5.  Click on **Azure Machine learning** resource.
+
+  ![](./media/image252.png)
+
+6.  Copy the name of AML resource and save it in notepad for the variable **AML_WORKSPACE_NAME** .Click on **Launch Studio** to
+    launch AML Studio.
+
+ ![](./media/image253.png)
+
+4.  Copy the AML cluster name and store it in notepad next to the  variable - **AML_COMPUTE_INSTANCE**
+
+ ![](./media/image254.png)
+
+ ![](./media/image255.png)
+
+5.  Go back to the Resource group and click on **Azure Database for  PostgreSQL server** resource.
+
+ ![](./media/image256.png)
+
+6.  Expand **Settings->Connect** , select flexibleserverdb database and copy PGHOST value and paste in your environment variable notebook
+    for the variable **PG_HOST**.
+
+ ![](./media/image257.png)
+
+ ![](./media/image258.png)
+
+7.  Switch back to Resource group and click on **Azure search** service.
+
+ ![](./media/image259.png)
+
+8.  Click on Overview and copy URL . Save it in environment variable for the variable- **AZURE_SEARCH_ENDPOINT.**
+
+ ![](./media/image260.png)
+
+ ![](./media/image261.png)
+
+9.  Expand **Settings->Keys->Both-> yes** from left navigation menu,  copy the **Primary admin key** and save it in notepad for the
+    variable -
+
+ ![](./media/image262.png)
+
+ ![](./media/image263.png)
+
+10. Switch back to **Resource group** and click on **Azure OpenAI.**
+
+![](./media/image264.png)
+
+11. Expand **Resource Management -> Keys and Endpoint** , copy **Endpoint** and **Key 1** and update environmental variables note
+    book for the variable -
+
+ ![](./media/image265.png)
+
+ ![](./media/image266.png)
+
 
 ### Task 3 : Create a tables in Azure PostgreSQL
 
