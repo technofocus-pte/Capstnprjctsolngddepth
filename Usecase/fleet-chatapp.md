@@ -159,6 +159,35 @@ incorrect.](./media/image15.png)
   ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image16.png)
 
+7. Create Notebook and save it on Dekstop witht he name ++env_varaiable.txt+++
+8. Add below variable into the notebook.
+  ```
+  SUBSCRIPTIONID=<Yours SUBSCRIPTIPN_ID>
+RESOURCEGROUP=ResourceGroup1
+
+AML_WORKSPACE_NAME=<YOUR AML_WORKSPACE>
+AML_COMPUTE_INSTANCE=<YOUR COMPUTE INSTANCE>
+AML_CLUSTER=amlccfg-aml-cluster
+
+AZURE_ML_ENDPOINT=<AZURE AML ENDPOINT>
+AZURE_ML_API_KEY=<AML  API KEY>
+
+PG_HOST=<POSTGRESQL HOST>
+PG_DB=flexibleserverdb
+PG_USER=citus
+PG_PASSWORD=Fhtest208
+PG_PORT=5432
+
+AZURE_SEARCH_ENDPOINT=<AZURE SEARCH ENDPOINT>
+AZURE_SEARCH_KEY=<AZURE SEARCH KEY>
+AZURE_SEARCH_INDEX_NAME=fleet_index
+
+AZURE_OPENAI_KEY=<AZURE OPENAI KEY>
+AZURE_OPENAI_ENDPOINT=<AZURE OPENAI ENDPOINT>
+AZURE_OPENAI_embedding_DEPLOYMENT=text-embedding-ada-002
+AZURE_OPENAI_CHAT_DEPLOYMENT=gpt-35-turbo
+```
+
 ### Task 2 : Check deployed resources in Azure
 
 1.  On home page of Azure portal, click on Resource group tile.
