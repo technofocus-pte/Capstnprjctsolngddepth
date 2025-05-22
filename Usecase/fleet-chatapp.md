@@ -206,11 +206,10 @@ AZURE_OPENAI_CHAT_DEPLOYMENT=gpt-35-turbo
   -  **Azure OpenAI**
   - **Azure Search service**
 
-   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image19.png)
+  ![A screenshot of a computer AI-generated content may be incorrect.](./media/image19.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image20.png)
+  ![A screenshot of a computer AI-generated content may be incorrect.](./media/image20.png)
 
-  ### Task 2 : Check deployed resources in Azure
 
 4.  Expand Essentials and copy Subscription ID and paste in the
     environment vaiable notebook next to **SUBSCRIPTIONID** variable.
