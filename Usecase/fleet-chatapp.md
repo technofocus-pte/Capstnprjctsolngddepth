@@ -75,7 +75,10 @@ maintenance documents stored in **Azure AI Search**. These embeddings
 were generated using Azure OpenAI and indexed alongside metadata
 exported from a **PostgreSQL vehicle telemetry database**.
 
-Bottom of Form
+# IMPORTANAT
+
+Open a Notebook from Start menu to save all Azure resources endpoint ,kyes and connection values to use differnet tasks of the labs
+
 
 ## Exercise 1 : Deploy the resources in Azure 
 
