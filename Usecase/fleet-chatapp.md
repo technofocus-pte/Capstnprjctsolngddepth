@@ -186,6 +186,9 @@ AZURE_OPENAI_KEY=<AZURE OPENAI KEY>
 AZURE_OPENAI_ENDPOINT=<AZURE OPENAI ENDPOINT>
 AZURE_OPENAI_embedding_DEPLOYMENT=text-embedding-ada-002
 AZURE_OPENAI_CHAT_DEPLOYMENT=gpt-35-turbo
+
+AML_MODEL_ENDPOINT=<endpoint from fleet_aml_training.ipynb -Use the web service cell>
+AML_MODEL_API_key=<MODEL Deployment key from fleet_aml_training.ipynb>
 ```
 
 ### Task 2 : Check deployed resources in Azure
