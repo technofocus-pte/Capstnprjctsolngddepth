@@ -1126,7 +1126,10 @@ incorrect.](./media/image189.png)
 
   +++python -m pip install --user -r requirements.txt+++
 
-  +++pip install openai[datalib]+++
+ 
+  +++pip install openai[datalib]+++ 
+  
+  Note : if above command not pasting correctly  use - pip install openai[datalib]
 
   ![A screen shot of a computer program AI-generated content may be
 incorrect.](./media/image191.png)
