@@ -159,43 +159,46 @@ incorrect.](./media/image15.png)
   ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image16.png)
 
-7. Create Notebook and save it on Dekstop witht he name ++env_varaiable+++
+7. Create Notebook and save it on Dekstop witht he name +++env_varaiable+++
 8. Add below variable into the notebook.
+   
   ```
   SUBSCRIPTIONID=<Yours SUBSCRIPTIPN_ID>
-RESOURCEGROUP=ResourceGroup1
+  RESOURCEGROUP=ResourceGroup1
+  
+  AML_WORKSPACE_NAME=<YOUR AML_WORKSPACE>
+  AML_COMPUTE_INSTANCE=<YOUR COMPUTE INSTANCE>
+  AML_CLUSTER=amlccfg-aml-cluster
+  
+  AZURE_ML_ENDPOINT=<AZURE AML ENDPOINT>
+  AZURE_ML_API_KEY=<AML  API KEY>
+  
+  PG_HOST=<POSTGRESQL HOST>
+  PG_DB=flexibleserverdb
+  PG_USER=citus
+  PG_PASSWORD=Fhtest208
+  PG_PORT=5432
+  
+  AZURE_SEARCH_ENDPOINT=<AZURE SEARCH ENDPOINT>
+  AZURE_SEARCH_KEY=<AZURE SEARCH KEY>
+  AZURE_SEARCH_INDEX_NAME=fleet_index
+  
+  AZURE_OPENAI_KEY=<AZURE OPENAI KEY>
+  AZURE_OPENAI_ENDPOINT=<AZURE OPENAI ENDPOINT>
+  AZURE_OPENAI_embedding_DEPLOYMENT=text-embedding-ada-002
+  AZURE_OPENAI_CHAT_DEPLOYMENT=gpt-35-turbo
+  
+  AML_MODEL_ENDPOINT=<endpoint from fleet_aml_training.ipynb -Use the web service cell>
+  AML_MODEL_API_key=<MODEL Deployment key from fleet_aml_training.ipynb>
+  ```
 
-AML_WORKSPACE_NAME=<YOUR AML_WORKSPACE>
-AML_COMPUTE_INSTANCE=<YOUR COMPUTE INSTANCE>
-AML_CLUSTER=amlccfg-aml-cluster
-
-AZURE_ML_ENDPOINT=<AZURE AML ENDPOINT>
-AZURE_ML_API_KEY=<AML  API KEY>
-
-PG_HOST=<POSTGRESQL HOST>
-PG_DB=flexibleserverdb
-PG_USER=citus
-PG_PASSWORD=Fhtest208
-PG_PORT=5432
-
-AZURE_SEARCH_ENDPOINT=<AZURE SEARCH ENDPOINT>
-AZURE_SEARCH_KEY=<AZURE SEARCH KEY>
-AZURE_SEARCH_INDEX_NAME=fleet_index
-
-AZURE_OPENAI_KEY=<AZURE OPENAI KEY>
-AZURE_OPENAI_ENDPOINT=<AZURE OPENAI ENDPOINT>
-AZURE_OPENAI_embedding_DEPLOYMENT=text-embedding-ada-002
-AZURE_OPENAI_CHAT_DEPLOYMENT=gpt-35-turbo
-
-AML_MODEL_ENDPOINT=<endpoint from fleet_aml_training.ipynb -Use the web service cell>
-AML_MODEL_API_key=<MODEL Deployment key from fleet_aml_training.ipynb>
-```
 9. Switch back Azure portal  and update below command with AML workspace name and then run to get AML's object id
-+++az resource show --resource-type "Microsoft.MachineLearningServices/workspaces" --name <your-workspace-name> --resource-group ResourceGroup1 --query "identity"+++
+
+  +++az resource show --resource-type "Microsoft.MachineLearningServices/workspaces" --name <your-workspace-name> --resource-group ResourceGroup1 --query "identity"+++
 
    ![](./media/image200.jpg)
 
-11. Update below command with the object id geneated from above command and also update command with your Subscirption id and then run the command to assign the rol.
+10. Update below command with the object id generated from above command and also update command with your Subscirption id and then run the command to assign the rol.
 
 +++az role assignment create --assignee <AML ObjectID> --role "Azure Container Instances Contributor" --scope /subscriptions/<SUBSCRIPTION_ID>/resourceGroups/resourcegroup1 +++
 
