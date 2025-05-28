@@ -194,7 +194,7 @@ incorrect.](./media/image2002.png)
 
 9. Switch back Azure portal  and update below command with AML workspace name and then run to get AML's object id
 
-  +++az resource show  --resource-type "Microsoft.MachineLearningServices/workspaces" --name <your-workspace-name> --resource-group ResourceGroup1   --query "identity"+++
+  +++az resource show  --resource-type "Microsoft.MachineLearningServices/workspaces" --name your-workspace-name --resource-group ResourceGroup1   --query "identity"+++
 
   **Note** : az resource show  --resource-type "Microsoft.MachineLearningServices/workspaces" --name <your-workspace-name> --resource-group ResourceGroup1   --query "identity"
 
