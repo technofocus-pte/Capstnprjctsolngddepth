@@ -194,13 +194,13 @@ incorrect.](./media/image2002.png)
 
 9. Switch back Azure portal  and update below command with AML workspace name and then run to get AML's object id
 
-  +++az resource show --resource-type "Microsoft.MachineLearningServices/workspaces" --name <your-workspace-name> --resource-group ResourceGroup1 --query "identity"+++
+  +++az resource show  --resource-type "Microsoft.MachineLearningServices/workspaces" --name <your-workspace-name> --resource-group ResourceGroup1   --query "identity"+++
 
    ![](./media/image200.jpg)
 
 10. Update below command with the object id generated from above command and also update command with your Subscirption id and then run the command to assign the rol.
 
-+++az role assignment create --assignee <AML ObjectID> --role "Azure Container Instances Contributor" --scope /subscriptions/<SUBSCRIPTION_ID>/resourceGroups/resourcegroup1 +++
++++az role assignment create --assignee <AML ObjectID> --role "Azure Container Instances Contributor" –scope /subscriptions/<SUBSCRIPTION_ID>/resourceGroups/resourcegroup1+++
 
 ![](./media/image201.jpg)
 
