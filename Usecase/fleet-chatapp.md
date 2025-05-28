@@ -162,47 +162,47 @@ incorrect.](./media/image2002.png)
 7. open a Notepad from Start menu and save it on Dekstop with  the name +++env_varaiable+++
 8. Add below variable into the notepad.
    
-  ```
-  SUBSCRIPTIONID=<Yours SUBSCRIPTIPN_ID>
-  RESOURCEGROUP=ResourceGroup1
-  
-  AML_WORKSPACE_NAME=<YOUR AML_WORKSPACE>
-  AML_COMPUTE_INSTANCE=<YOUR COMPUTE INSTANCE>
-  AML_CLUSTER=amlccfg-aml-cluster
-  
-  AZURE_ML_ENDPOINT=<AZURE AML ENDPOINT>
-  AZURE_ML_API_KEY=<AML  API KEY>
-  
-  PG_HOST=<POSTGRESQL HOST>
-  PG_DB=flexibleserverdb
-  PG_USER=citus
-  PG_PASSWORD=Fhtest208
-  PG_PORT=5432
-  
-  AZURE_SEARCH_ENDPOINT=<AZURE SEARCH ENDPOINT>
-  AZURE_SEARCH_KEY=<AZURE SEARCH KEY>
-  AZURE_SEARCH_INDEX_NAME=fleet_index
-  
-  AZURE_OPENAI_KEY=<AZURE OPENAI KEY>
-  AZURE_OPENAI_ENDPOINT=<AZURE OPENAI ENDPOINT>
-  AZURE_OPENAI_embedding_DEPLOYMENT=text-embedding-ada-002
-  AZURE_OPENAI_CHAT_DEPLOYMENT=gpt-35-turbo
-  
-  AML_MODEL_ENDPOINT=<endpoint from fleet_aml_training.ipynb -Use the web service cell>
-  AML_MODEL_API_key=<MODEL Deployment key from fleet_aml_training.ipynb>
-  ```
+    ```
+    SUBSCRIPTIONID=<Yours SUBSCRIPTIPN_ID>
+    RESOURCEGROUP=ResourceGroup1
+    
+    AML_WORKSPACE_NAME=<YOUR AML_WORKSPACE>
+    AML_COMPUTE_INSTANCE=<YOUR COMPUTE INSTANCE>
+    AML_CLUSTER=amlccfg-aml-cluster
+    
+    AZURE_ML_ENDPOINT=<AZURE AML ENDPOINT>
+    AZURE_ML_API_KEY=<AML  API KEY>
+    
+    PG_HOST=<POSTGRESQL HOST>
+    PG_DB=flexibleserverdb
+    PG_USER=citus
+    PG_PASSWORD=Fhtest208
+    PG_PORT=5432
+    
+    AZURE_SEARCH_ENDPOINT=<AZURE SEARCH ENDPOINT>
+    AZURE_SEARCH_KEY=<AZURE SEARCH KEY>
+    AZURE_SEARCH_INDEX_NAME=fleet_index
+    
+    AZURE_OPENAI_KEY=<AZURE OPENAI KEY>
+    AZURE_OPENAI_ENDPOINT=<AZURE OPENAI ENDPOINT>
+    AZURE_OPENAI_embedding_DEPLOYMENT=text-embedding-ada-002
+    AZURE_OPENAI_CHAT_DEPLOYMENT=gpt-35-turbo
+    
+    AML_MODEL_ENDPOINT=<endpoint from fleet_aml_training.ipynb -Use the web service cell>
+    AML_MODEL_API_key=<MODEL Deployment key from fleet_aml_training.ipynb>
+    ```  
 
 9. Switch back Azure portal  and repalce **your-workspace-name** with your AML workspace name in the below command  and then run to get AML's object id (Note : Open notepad  and copy the below command to update )
 
-  +++az resource show  --resource-type "Microsoft.MachineLearningServices/workspaces" --name your-workspace-name --resource-group ResourceGroup1   --query "identity"+++
+    +++az resource show  --resource-type "Microsoft.MachineLearningServices/workspaces" --name your-workspace-name --resource-group ResourceGroup1   --query "identity"+++
 
    ![](./media/image200.jpg)
 
 10. repalce AML_principalId below command with the principalId id generated from above command and also repalce SUBSCRIPTION_ID with your Subscirption id and then run the command to assign the role.(Note : Open notepad  and copy the below command to update )
 
-+++az role assignment create --assignee AML_principalId --role "Azure Container Instances Contributor Role"  --scope /subscriptions/SUBSCRIPTION_ID/resourceGroups/resourcegroup1+++
+  +++az role assignment create --assignee AML_principalId --role "Azure Container Instances Contributor Role"  --scope /subscriptions/SUBSCRIPTION_ID/resourceGroups/resourcegroup1+++
 
-![](./media/image201.jpg)
+  ![](./media/image201.jpg)
 
 ### Task 2 : Check deployed resources in Azure
 
@@ -341,48 +341,47 @@ incorrect.](./media/image29.png)
 
 10. Run the below command to create a **contosofleet** table.(Note : Open notepad  and copy the below script and then move it to Cloudshell)
 
-  ```
-  CREATE TABLE contosofleet (
-  RecordID  serial PRIMARY KEY,
-  VehicleID INTEGER,
-       MeasurementTimestamp TIMESTAMP,
-        FleetID   INTEGER,
-      TruckID  INTEGER,
-      Region INTEGER,
-     Mileage INTEGER,
-  EngineHealth float,
-  SensorData float,
-  VehicleSpeedSensor  INTEGER,
-  Vibration DOUBLE PRECISION,    
-  EngineLoad float,
-  EngineCoolantTemp INTEGER,  
-  IntakeManifoldPressure INTEGER,
-  EngineRPM INTEGER,   
-  SpeedOBD INTEGER,
-  IntakeAirTemp INTEGER,     
-  MassAirFlowRate float,
-  ThrottlePosManifold float,
-  VoltageControlModule float,
-  AmbientAirTemp INTEGER,      
-  AccelPedalPosD float,
-  EngineOilTemp INTEGER,      
-  SpeedGPS INTEGER,
-  GPSLongitude float,
-   GPSLatitude float,
-  GPSBearing float,
-  GPSAltitude INTEGER,      
-  TurboBoostAndVcmGauge float,
-  TripDistance float,
-  LitresPer100kmInst  float,
-  AccelSsorTotal float,
-  CO2InGPerKmInst float,
-  TripTimeJourney INTEGER,
-  MaintenanceFlag INTEGER
-  );
-  ```
+    ```
+    CREATE TABLE contosofleet (
+    RecordID  serial PRIMARY KEY,
+    VehicleID INTEGER,
+         MeasurementTimestamp TIMESTAMP,
+          FleetID   INTEGER,
+        TruckID  INTEGER,
+        Region INTEGER,
+       Mileage INTEGER,
+    EngineHealth float,
+    SensorData float,
+    VehicleSpeedSensor  INTEGER,
+    Vibration DOUBLE PRECISION,    
+    EngineLoad float,
+    EngineCoolantTemp INTEGER,  
+    IntakeManifoldPressure INTEGER,
+    EngineRPM INTEGER,   
+    SpeedOBD INTEGER,
+    IntakeAirTemp INTEGER,     
+    MassAirFlowRate float,
+    ThrottlePosManifold float,
+    VoltageControlModule float,
+    AmbientAirTemp INTEGER,      
+    AccelPedalPosD float,
+    EngineOilTemp INTEGER,      
+    SpeedGPS INTEGER,
+    GPSLongitude float,
+     GPSLatitude float,
+    GPSBearing float,
+    GPSAltitude INTEGER,      
+    TurboBoostAndVcmGauge float,
+    TripDistance float,
+    LitresPer100kmInst  float,
+    AccelSsorTotal float,
+    CO2InGPerKmInst float,
+    TripTimeJourney INTEGER,
+    MaintenanceFlag INTEGER
+    );
+    ```
 
-    ![A screenshot of a computer screen AI-generated content may be
-incorrect.](./media/image30.png)
+  ![A screenshot of a computer screen AI-generated content may be incorrect.](./media/image30.png)
 
 11. Run below command to grant access to the user.
 
@@ -922,9 +921,9 @@ incorrect.](./media/image140.png)
 
   |**Field Name**|**Data Type**|**Searchable**|**Filterable**|**Sortable**|**Facetable**|**Retrievable**|**Dimentions**|
   |--|--|--|--|--|--|--|--|
-  |**filename**|Edm.String|yes|yes|yes|No|yes||
-  |**content**|Edm.String|No|Yes|No|No|Yes||
-  |**embedding**|Collection(Edm.Single)|Yes|No|No|No|Yes|**1536**|
+  |+++filename+++|Edm.String|yes|yes|yes|No|yes||
+  |+++content+++|Edm.String|No|Yes|No|No|Yes||
+  |+++embedding+++|Collection(Edm.Single)|Yes|No|No|No|Yes|+++1536+++|
 
   ![](./media/image143.png)
 
