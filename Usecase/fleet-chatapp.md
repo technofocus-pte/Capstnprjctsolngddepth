@@ -55,11 +55,8 @@ Participants should have:
 
   - Azure AI Foundry
 
-## Component Overview
 
-[TABLE]
-
-Scenario :
+**Scenario** :
 
 **Contoso Transport Inc., a leading logistics provider, has launched an
 AI-powered fleet maintenance assistant to reduce downtime and improve
@@ -198,7 +195,7 @@ incorrect.](./media/image2002.png)
 
    ![](./media/image200.jpg)
 
-10. repalce AML_principalId below command with the principalId id generated from above command and also repalce SUBSCRIPTION_ID with your Subscirption id and then run the command to assign the role.(Note : Open notepad  and copy the below command to update )
+10. Repalce AML_principalId below command with the principalId id generated from above command and also repalce SUBSCRIPTION_ID with your Subscirption id and then run the command to assign the role.(Note : Open notepad  and copy the below command to update )
 
   +++az role assignment create --assignee AML_principalId --role "Azure Container Instances Contributor Role"  --scope /subscriptions/SUBSCRIPTION_ID/resourceGroups/resourcegroup1+++
 
