@@ -200,7 +200,7 @@ incorrect.](./media/image2002.png)
 
 10. Update below command with the object id generated from above command and also update command with your Subscirption id and then run the command to assign the rol.
 
-+++az role assignment create --assignee <AML ObjectID> --role "Azure Container Instances Contributor" –scope /subscriptions/<SUBSCRIPTION_ID>/resourceGroups/resourcegroup1+++
++++az role assignment create --assignee <AML_principalId> --role "Azure Container Instances Contributor Role"  --scope /subscriptions/<SUBSCRIPTION_ID>/resourceGroups/resourcegroup1+++
 
 ![](./media/image201.jpg)
 
