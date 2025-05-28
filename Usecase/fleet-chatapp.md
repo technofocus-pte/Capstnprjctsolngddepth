@@ -448,9 +448,7 @@ incorrect.](./media/image33.png)
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image34.png)
 
-15. Create a **Table to Store Documents and Embeddings**
-
-You'll need a PostgreSQL table with a column for document text and
+15. Create a **Table to Store Documents and Embeddings**.You'll need a PostgreSQL table with a column for document text and
 another for embeddings.
 
   ```
@@ -764,32 +762,23 @@ content may be incorrect.](./media/image61.png)
 
    ![](./media/image101.png)
 
-6.  Open new terminal .Run below command and enter **y** when asked to
-    proced.
-
-   +++conda update -n base -c conda-forge conda+++
- 
-   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image102.png)
-
-   ![](./media/image103.png)
-
-7.  Run **requirements.txt** cell to install all dependencies.
+6.  Run **requirements.txt** cell to install all dependencies.
 
   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image104.png)
 
-8.  Update **.env** cell with your Azure resource details and run it
+7.  Update **.env** cell with your Azure resource details and run it
 
   ![](./media/image105.png)
 
-9.  Run the cell to connect to AML Workspace cell.
+8.  Run the cell to connect to AML Workspace cell.
 
    ![A screenshot of a computer AI-generated content may be  incorrect.](./media/image106.png)
 
-10. Run the cell to connect to PostgreSQL and import cleaned data.
+9. Run the cell to connect to PostgreSQL and import cleaned data.
 
   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image107.png)
 
-11. Run the cell to plot the Maintenance flag distribution.
+10. Run the cell to plot the Maintenance flag distribution.
 
   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image108.png)
 
@@ -797,37 +786,37 @@ content may be incorrect.](./media/image61.png)
 
   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image110.png)
 
-12. Run the script to create environment cell and run it.
+11. Run the script to create environment cell and run it.
 
  ![A screenshot of a computer AI-generated content may be incorrect.](./media/image111.png)
 
  ![A screenshot of a computer AI-generated content may be incorrect.](./media/image112.png)
 
-13. Run View registered environments cell .
+12. Run View registered environments cell .
 
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image113.png)
 
-14. Run the cell to create training script - **fleet_training.py**
+13. Run the cell to create training script - **fleet_training.py**
 
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image114.png)
 
-15. Refresh the root folder and you should see training script file got
+14. Refresh the root folder and you should see training script file got
     created.
 
   ![](./media/image115.png)
 
-16. Run the cell to run an experiment on remote compute
+15. Run the cell to run an experiment on remote compute
 
-17. Run the cell to get the cluster.
+16. Run the cell to get the cluster.
 
   ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image116.png)
 
   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image117.png)
 
-18. Run the train cell to train the model.It takes 5-10 minutes to run
+17. Run the train cell to train the model.It takes 5-10 minutes to run
     the script completely.
 
   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image118.png)
@@ -836,12 +825,12 @@ incorrect.](./media/image116.png)
 
   ![A screenshot of a computer AI-generated content may be  incorrect.](./media/image120.png)
 
-19. Run Get logged metrics code cell.
+18. Run Get logged metrics code cell.
 
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image121.png)
 
-20. Run the register model code cell to register the model.
+19. Run the register model code cell to register the model.
 
   ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image122.png)
@@ -849,21 +838,21 @@ incorrect.](./media/image122.png)
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image123.png)
 
-21. Run cell to Create a folder for the web service files
+20. Run cell to Create a folder for the web service files
 
   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image124.png)
 
-22. Run the cell to write score_fleet.py
+21. Run the cell to write score_fleet.py
 
   ![A screenshot of a computer program AI-generated content may be incorrect.](./media/image125.png)
 
-23. Now Deploy the model as a web service .Run the cell. Deployment takes 10-15 minutes to complete.
+22. Now Deploy the model as a web service .Run the cell. Deployment takes 10-15 minutes to complete.
 
   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image126.png)
 
   ![A screenshot of a computer AI-generated content may be  incorrect.](./media/image127.png)
 
-24. Run the cell to get endpoint
+23. Run the cell to get endpoint
 
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image128.png)
@@ -871,16 +860,16 @@ incorrect.](./media/image128.png)
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image129.png)
 
-25. Run the cell to enable authentication.
+24. Run the cell to enable authentication.
 
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image130.png)
 
-26. Run the cell to get endpoint and key to use in next cells and tasks.
+25. Run the cell to get endpoint and key to use in next cells and tasks.
 
   ![](./media/image131.png)
 
-27. Update endpoint and key values and run the cell to test predictions.
+26. Update endpoint and key values and run the cell to test predictions.
 
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image132.png)
