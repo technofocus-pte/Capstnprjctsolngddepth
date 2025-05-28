@@ -923,7 +923,7 @@ incorrect.](./media/image140.png)
   |**Field Name**|**Data Type**|**Searchable**|**Filterable**|**Sortable**|**Facetable**|**Retrievable**|**Dimentions**|
   |--|--|--|--|--|--|--|--|
   |**filename**|Edm.String|yes|yes|yes|No|yes||
-  |**content**|Edm.String|No|Yes|No|No|No||
+  |**content**|Edm.String|No|Yes|No|No|Yes||
   |**embedding**|Collection(Edm.Single)|Yes|No|No|No|Yes|**1536**|
 
   ![](./media/image143.png)
