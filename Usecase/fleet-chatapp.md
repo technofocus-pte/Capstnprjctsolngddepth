@@ -159,8 +159,8 @@ incorrect.](./media/image15.png)
   ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image2002.png)
 
-7. Create Notebook and save it on Dekstop witht he name +++env_varaiable+++
-8. Add below variable into the notebook.
+7. open a Notepad from Start menu and save it on Dekstop with  the name +++env_varaiable+++
+8. Add below variable into the notepad.
    
   ```
   SUBSCRIPTIONID=<Yours SUBSCRIPTIPN_ID>
@@ -228,7 +228,7 @@ incorrect.](./media/image2002.png)
 
 
 4.  Expand Essentials and copy Subscription ID and paste in the
-    environment vaiable notebook next to **SUBSCRIPTIONID** variable.
+    environment vaiable notepad next to **SUBSCRIPTIONID** variable.
 
  ![](./media/image250.png)
  
@@ -253,7 +253,7 @@ incorrect.](./media/image2002.png)
 
  ![](./media/image256.png)
 
-6.  Expand **Settings->Connect** , select flexibleserverdb database and copy PGHOST value and paste in your environment variable notebook
+6.  Expand **Settings->Connect** , select flexibleserverdb database and copy PGHOST value and paste in your environment variable notepad
     for the variable **PG_HOST**.
 
  ![](./media/image257.png)
@@ -282,7 +282,7 @@ incorrect.](./media/image2002.png)
 ![](./media/image264.png)
 
 11. Expand **Resource Management -> Keys and Endpoint** , copy **Endpoint** and **Key 1** and update environmental variables note
-    book for the variable -
+    pad for the variable -
 
  ![](./media/image265.png)
 
