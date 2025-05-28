@@ -192,15 +192,15 @@ incorrect.](./media/image2002.png)
   AML_MODEL_API_key=<MODEL Deployment key from fleet_aml_training.ipynb>
   ```
 
-9. Switch back Azure portal  and repalce **your-workspace-name** with your AML workspace name in the below command  and then run to get AML's object id
+9. Switch back Azure portal  and repalce **your-workspace-name** with your AML workspace name in the below command  and then run to get AML's object id (Note : Open notepad  and copy the below command to update )
 
   +++az resource show  --resource-type "Microsoft.MachineLearningServices/workspaces" --name your-workspace-name --resource-group ResourceGroup1   --query "identity"+++
 
    ![](./media/image200.jpg)
 
-10. Update below command with the object id generated from above command and also update command with your Subscirption id and then run the command to assign the rol.
+10. repalce AML_principalId below command with the principalId id generated from above command and also repalce SUBSCRIPTION_ID with your Subscirption id and then run the command to assign the role.(Note : Open notepad  and copy the below command to update )
 
-+++az role assignment create --assignee <AML_principalId> --role "Azure Container Instances Contributor Role"  --scope /subscriptions/<SUBSCRIPTION_ID>/resourceGroups/resourcegroup1+++
++++az role assignment create --assignee AML_principalId --role "Azure Container Instances Contributor Role"  --scope /subscriptions/SUBSCRIPTION_ID/resourceGroups/resourcegroup1+++
 
 ![](./media/image201.jpg)
 
@@ -271,7 +271,7 @@ incorrect.](./media/image2002.png)
  ![](./media/image261.png)
 
 9.  Expand **Settings->Keys->Both-> yes** from left navigation menu,  copy the **Primary admin key** and save it in notepad for the
-    variable -
+    variable -**AZURE_SEARCH_KEY.**
 
  ![](./media/image262.png)
 
@@ -279,19 +279,19 @@ incorrect.](./media/image2002.png)
 
 10. Switch back to **Resource group** and click on **Azure OpenAI.**
 
-![](./media/image264.png)
+  ![](./media/image264.png)
 
 11. Expand **Resource Management -> Keys and Endpoint** , copy **Endpoint** and **Key 1** and update environmental variables note
     pad for the variable -
 
- ![](./media/image265.png)
+   ![](./media/image265.png)
 
- ![](./media/image266.png)
+   ![](./media/image266.png)
 
 
 ### Task 3 : Create a tables in Azure PostgreSQL
 
-1.  Click on Azure PostgreSQL server name.
+1.  Click on **Azure Database for PostgreSQL server** name.
 
   ![](./media/image21.png)
 
@@ -307,7 +307,7 @@ incorrect.](./media/image2002.png)
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image23.png)
 
-4.  **Click on Server parameters and seach for extensions. Select vector** and **azure-ai extensions** and then click on **Save**
+4.  Click on **Server parameters** and seach for +++extensions+++. Select **Vector** and **azure-ai** extensions and then click on **Save**
 
   ![](./media/image24.png)
 
@@ -339,7 +339,7 @@ incorrect.](./media/image28.png)
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image29.png)
 
-10. Run the below command to create a **contosofleet** table.
+10. Run the below command to create a **contosofleet** table.(Note : Open notepad  and copy the below script and then move it to Cloudshell)
 
   ```
   CREATE TABLE contosofleet (
@@ -381,86 +381,86 @@ incorrect.](./media/image29.png)
   );
   ```
 
-  ![A screenshot of a computer screen AI-generated content may be
+    ![A screenshot of a computer screen AI-generated content may be
 incorrect.](./media/image30.png)
 
 11. Run below command to grant access to the user.
 
-  +++GRANT ALL ON TABLE contosofleet TO citus;+++
+    +++GRANT ALL ON TABLE contosofleet TO citus;+++
 
-  ![A screenshot of a computer screen AI-generated content may be
+    ![A screenshot of a computer screen AI-generated content may be
 incorrect.](./media/image31.png)
 
-12. Create another table to export cleaned data –  **Fleet-Clearned_data** table.
+12. Create another table to export cleaned data –  **Fleet-Clearned_data** table.(Note : Open notepad  and copy the below script and then move it to Cloudshell)
 
-  ```
-  CREATE TABLE fleet_cleaned_data (
-  RecordID  serial PRIMARY KEY,
-  VehicleID INTEGER,
-  Region INTEGER,
-  Mileage INTEGER,
-  EngineHealth float,
-  SensorData float,
-  VehicleSpeedSensor  INTEGER,
-  Vibration DOUBLE PRECISION,    
-  EngineLoad float,
-  EngineCoolantTemp INTEGER,  
-  IntakeManifoldPressure INTEGER,
-  EngineRPM INTEGER,   
-  SpeedOBD INTEGER,
-  IntakeAirTemp INTEGER,     
-  MassAirFlowRate float,
-  ThrottlePosManifold float,
-  VoltageControlModule float,
-  AmbientAirTemp INTEGER,      
-  AccelPedalPosD float,
-  EngineOilTemp INTEGER,      
-  SpeedGPS INTEGER,
-  GPSLongitude float,
-   GPSLatitude float,
-  GPSBearing float,
-  GPSAltitude INTEGER,      
-  TurboBoostAndVcmGauge float,
-  TripDistance float,
-  LitresPer100kmInst  float,
-  AccelSsorTotal float,
-  CO2InGPerKmInst float,
-  TripTimeJourney INTEGER,
-  MaintenanceFlag INTEGER
-  );
-  ```
+    ```
+    CREATE TABLE fleet_cleaned_data (
+    RecordID  serial PRIMARY KEY,
+    VehicleID INTEGER,
+    Region INTEGER,
+    Mileage INTEGER,
+    EngineHealth float,
+    SensorData float,
+    VehicleSpeedSensor  INTEGER,
+    Vibration DOUBLE PRECISION,    
+    EngineLoad float,
+    EngineCoolantTemp INTEGER,  
+    IntakeManifoldPressure INTEGER,
+    EngineRPM INTEGER,   
+    SpeedOBD INTEGER,
+    IntakeAirTemp INTEGER,     
+    MassAirFlowRate float,
+    ThrottlePosManifold float,
+    VoltageControlModule float,
+    AmbientAirTemp INTEGER,      
+    AccelPedalPosD float,
+    EngineOilTemp INTEGER,      
+    SpeedGPS INTEGER,
+    GPSLongitude float,
+     GPSLatitude float,
+    GPSBearing float,
+    GPSAltitude INTEGER,      
+    TurboBoostAndVcmGauge float,
+    TripDistance float,
+    LitresPer100kmInst  float,
+    AccelSsorTotal float,
+    CO2InGPerKmInst float,
+    TripTimeJourney INTEGER,
+    MaintenanceFlag INTEGER
+    );
+    ```
 
-  ![](./media/image32.png)
+    ![](./media/image32.png)
 
 13. Run below command to grant access to the user.
 
-  +++GRANT ALL ON TABLE fleet_cleaned_data TO citus;+++
+    +++GRANT ALL ON TABLE fleet_cleaned_data TO citus;+++
 
-  ![A screenshot of a computer AI-generated content may be
+    ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image33.png)
 
 14. Run below command to Install **vecotor** and **azure_ai extensions**
 
-  +++CREATE EXTENSION azure_ai;+++
+    +++CREATE EXTENSION azure_ai;+++
 
-  +++CREATE EXTENSION vector;+++
+    +++CREATE EXTENSION vector;+++
 
-  ![A screenshot of a computer AI-generated content may be
+    ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image34.png)
 
 15. Create a **Table to Store Documents and Embeddings**.You'll need a PostgreSQL table with a column for document text and
-another for embeddings.
+another for embeddings.(Note : Open notepad  and copy the below script and then move it to Cloudshell)
 
-  ```
-  CREATE TABLE maintenance_documents (
-      id SERIAL PRIMARY KEY,
-      filename TEXT NOT NULL,
-      content TEXT NOT NULL,
-      embeddings vector(1536)  -- Adjust dimensions based on the embedding model
-  );
-  ```
+    ```
+    CREATE TABLE maintenance_documents (
+        id SERIAL PRIMARY KEY,
+        filename TEXT NOT NULL,
+        content TEXT NOT NULL,
+        embeddings vector(1536)  -- Adjust dimensions based on the embedding model
+    );
+    ```
 
-  +++GRANT ALL ON TABLE maintenance_documents TO citus;+++
+    +++GRANT ALL ON TABLE maintenance_documents TO citus;+++
 
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image35.png)
@@ -535,7 +535,7 @@ incorrect.](./media/image43.png)
 
 7. Select **Delimited Text** format and click **Continue**.
 
-![](./media/image50.png)
+  ![](./media/image50.png)
 
 8. Enter the name as +++blobfleetdata+++, select your blob linked service 
     and then click drop down next to **File path** and select **From
@@ -570,7 +570,7 @@ incorrect.](./media/image55.png)
   - **Linked Service** : **PostgreSQLLinkedService**
   - **Table name** : Search for +++public.contosofleet+++ and select it.
 
-  ![](./media/image58.png)
+    ![](./media/image58.png)
   
 14. Click on **Mapping** tab.
 
@@ -788,13 +788,13 @@ content may be incorrect.](./media/image61.png)
 
 11. Run the script to create environment cell and run it.
 
- ![A screenshot of a computer AI-generated content may be incorrect.](./media/image111.png)
+   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image111.png)
 
- ![A screenshot of a computer AI-generated content may be incorrect.](./media/image112.png)
+   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image112.png)
 
 12. Run View registered environments cell .
 
-  ![A screenshot of a computer AI-generated content may be
+    ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image113.png)
 
 13. Run the cell to create training script - **fleet_training.py**
@@ -811,7 +811,7 @@ incorrect.](./media/image114.png)
 
 16. Run the cell to get the cluster.
 
-  ![A screenshot of a computer program AI-generated content may be
+    ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image116.png)
 
   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image117.png)
