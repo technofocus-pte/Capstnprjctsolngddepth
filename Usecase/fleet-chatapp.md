@@ -919,8 +919,9 @@ incorrect.](./media/image140.png)
 
 3.  **Create fields as per below table**
 
-  |||||||||
+
   |**Field Name**|**Data Type**|**Searchable**|**Filterable**|**Sortable**|**Facetable**|**Retrievable**|**Dimentions**|
+  |--|--|--|--|--|--|--|--|
   |**filename**|Edm.String|yes|yes|yes|No|yes||
   |**content**|Edm.String|No|Yes|No|No|No|Yes||
   |**embedding**|Collection(Edm.Single)|Yes|No|No|No|Yes|**1536**|
