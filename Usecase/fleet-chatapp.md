@@ -192,11 +192,9 @@ incorrect.](./media/image2002.png)
   AML_MODEL_API_key=<MODEL Deployment key from fleet_aml_training.ipynb>
   ```
 
-9. Switch back Azure portal  and update below command with AML workspace name and then run to get AML's object id
+9. Switch back Azure portal  and repalce **your-workspace-name** with your AML workspace name in the below command  and then run to get AML's object id
 
   +++az resource show  --resource-type "Microsoft.MachineLearningServices/workspaces" --name your-workspace-name --resource-group ResourceGroup1   --query "identity"+++
-
-  **Note** : az resource show  --resource-type "Microsoft.MachineLearningServices/workspaces" --name <your-workspace-name> --resource-group ResourceGroup1   --query "identity"
 
    ![](./media/image200.jpg)
 
