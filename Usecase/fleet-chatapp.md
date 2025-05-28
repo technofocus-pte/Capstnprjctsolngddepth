@@ -1185,7 +1185,7 @@ incorrect.](./media/image200.png)
 ### Task 2 : Insall extension in visual Studio code.
 
 1.  Switch back to Visual Studio code and click on **Extensions** from
-    left navigation menu, search for Azure Developer CLI and install it.
+    left navigation menu, search for +++Azure Developer CLI+++ and install it.
 
   ![](./media/image201.png)
 
@@ -1201,18 +1201,17 @@ incorrect.](./media/image200.png)
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image204.png)
 
-4.  Click on **Extensions** and search for **Azure App Service** and **install** it.
+4.  Click on **Extensions** and search for +++Azure App Service+++ ,select it  and **install** it.
 
   ![](./media/image205.png)
 
 ### Task 3 : Create a web app 
 
-1.  Click on **Azure** icon from left navigation and right click on
-    **App service** and select **Create New Web App**
+1.  Click on **Azure** icon from left navigation and right click on  **App service** and select **Create New Web App**
 
   ![](./media/image206.png)
 
-2.  Select a any region to deploy your app
+2.  Select a any **Central US/West US/East US** region to deploy your app
 
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image207.png)
@@ -1265,15 +1264,15 @@ incorrect.](./media/image207.png)
 
   ![](./media/image218.png)
 
-4.  Add below variables with their values
+4.  Add below two variables with their values
 
   ![](./media/image219.png)
 
-5.  Add +++FLASK_APP+++ and value as +++app.py+++
+5.  Click and **Add** and enter the **Name** :+++FLASK_APP+++ and **value** as +++app.py+++ . click on **Apply**
 
   ![](./media/image220.png)
 
-6.  Add +++WEBSITES_PORT+++ and value as +++8000+++
+6.  Click on Add again and enter the **Name** : +++WEBSITES_PORT+++ and **value** as +++8000+++
 
   ![](./media/image221.png)
 
@@ -1283,27 +1282,19 @@ incorrect.](./media/image207.png)
 
   ![](./media/image223.png)
 
-8.  Click on **Configuration** and add startup command as - +++python -m flask run --host=0.0.0.0 --port=8000+++
+8.  Click on **Configuration** and add **Startup Command** as - +++python -m flask run --host=0.0.0.0 --port=8000+++
 
    ![](./media/image224.png)
 
-9.  Add Microsoft as identity provider
-
-  ![A screenshot of a computer AI-generated content may be incorrect.](./media/image225.png)
-
-10. Click on **Continue**.
-
-  ![](./media/image226.png)
-
-11. Click on identity from left navigation menu, On the status and  Save-> Yes
+9. Click on identity from left navigation menu, On the status and  Save-> Yes
 
    ![](./media/image227.png)
 
-12. Click on **Authentication** form left navigation bar and select  **Add identity provider.**
+10. Click on **Authentication** form left navigation bar and select  **Add identity provider.**
 
   ![](./media/image228.png)
 
-13. Select below values and keep all default values and then click on **Next: Permissions.**
+11. Select below values and keep all default values and then click on **Next: Permissions.**
 
   - **Identity provider** : **Microsoft**
 
@@ -1311,12 +1302,12 @@ incorrect.](./media/image207.png)
 
   ![](./media/image229.png)
 
-14. Click on Add permission. Expand Applicaions , select **Application.ReadWrite.All Read and write all applications** check box
+12. Click on **Add permission**. Expand **Applicaions** , select **Application.ReadWrite.All Read and write all applications** check box
     and then click on Update permissions.
 
   ![](./media/image230.png)
 
-15. Click on Add now.
+13. Click on **Add** now.
 
   ![](./media/image231.png)
 
