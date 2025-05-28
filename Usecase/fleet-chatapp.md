@@ -935,7 +935,7 @@ incorrect.](./media/image144.png)
 
   ![](./media/image145.png)
 
-5.  Click on **Create.**
+5.  Click on **Create** under **Vector Profile**.
 
   ![](./media/image146.png)
 
@@ -943,11 +943,11 @@ incorrect.](./media/image144.png)
 
   ![](./media/image147.png)
 
-7.  Click on **Save** again.
+7.  Click on **Save** under **Vector Profile**
 
   ![](./media/image148.png)
 
-8.  Click on **Save** in Index Field section.
+8.  Click on **Save** in **Index Field** section.
 
   ![](./media/image149.png)
 
@@ -987,13 +987,13 @@ incorrect.](./media/image151.png)
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image158.png)
 
-## Task 4 : Deploy embedding model.
+## Task 4 : Deploy chat  model.
 
 1.  Click on **Deployments** from left navigation menu. Select **Deploy model -> Deploy base model.**
 
   ![](./media/image159.png)
 
-2.  Search for +++gpt+++ model and select **gpt-35-turbo** ( any available chat model in resource region) and then click on **Confirm**.
+2.  Search for +++gpt+++ model and select **gpt-35-turbo** and then click on **Confirm**.
 
   ![](./media/image160.png)
 
@@ -1085,21 +1085,21 @@ incorrect.](./media/image180.png)
 
 ### Task 1 : Build fleetguard app locally
 
-1.  Create fleetapp folder on your vm desktop.
+1.  Create +++fleetapp+++ folder on your vm desktop.
 
   ![A screenshot of a computer AI-generated content may be  incorrect.](./media/image183.png)
 
-2.  Open visual Studio code from Dekstop. Click on **File-> Open Folder.**
+2.  Open Visual Studio code from Dekstop. Click on **File-> Open Folder.**
 
   ![](./media/image184.png)
 
-3.  Browse Desktop and select the fleetapp folder created on desktop.
+3.  Browse Desktop and select the **fleetapp** folder created on desktop.
 
   ![](./media/image185.png)
 
-4.  Open new Terminal.
+4.  Click on **Terminal-> New terminal** from top tool bar.
 
-  ![](./media/image186.png)
+  ![](./media/image203.png)
 
 5.  Run the command to clone the repo.
 
@@ -1107,7 +1107,7 @@ incorrect.](./media/image180.png)
 
   ![A screenshot of a computer AI-generated content may be  incorrect.](./media/image187.png)
 
-6.  Expand chatapp folder and update .env file with your azure resource values.Save the file
+6.  Expand chatapp folder and update **.env** file with your azure resource values from notepad.Save the file
 
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image188.png)
@@ -1115,7 +1115,7 @@ incorrect.](./media/image188.png)
   ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image189.png)
 
-7.  Run below command to navigate to the folder.
+7.  Run below command in the terminal to navigate to the folder.
 
   +++cd .\TFFleetOptmztn\chatapp\+++
 
@@ -1131,7 +1131,7 @@ incorrect.](./media/image189.png)
 
   +++python -m pip install --user -r requirements.txt+++
 
-  +++pip install openai[datalib]++
+  +++pip install openai[datalib]+++
 
   ![A screen shot of a computer program AI-generated content may be
 incorrect.](./media/image191.png)
