@@ -196,6 +196,8 @@ incorrect.](./media/image2002.png)
 
   +++az resource show  --resource-type "Microsoft.MachineLearningServices/workspaces" --name <your-workspace-name> --resource-group ResourceGroup1   --query "identity"+++
 
+  **Note** : az resource show  --resource-type "Microsoft.MachineLearningServices/workspaces" --name <your-workspace-name> --resource-group ResourceGroup1   --query "identity"
+
    ![](./media/image200.jpg)
 
 10. Update below command with the object id generated from above command and also update command with your Subscirption id and then run the command to assign the rol.
