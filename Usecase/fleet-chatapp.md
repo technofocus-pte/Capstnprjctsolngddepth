@@ -157,7 +157,7 @@ incorrect.](./media/image14.png)
 incorrect.](./media/image15.png)
 
   ![A screenshot of a computer program AI-generated content may be
-incorrect.](./media/image16.png)
+incorrect.](./media/image2002.png)
 
 7. Create Notebook and save it on Dekstop witht he name +++env_varaiable+++
 8. Add below variable into the notebook.
