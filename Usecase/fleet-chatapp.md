@@ -156,7 +156,7 @@ incorrect.](./media/image15.png)
   ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image2002.png)
 
-7. open a Notepad from Start menu and save it on Desktop with  the name +++env_varaiable+++
+7. open a Notepad from Start menu and save it on Desktop with  the name +++env_variable+++
 8. Add below variable into the notepad.
    
     ```
