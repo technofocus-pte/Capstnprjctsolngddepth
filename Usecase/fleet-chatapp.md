@@ -74,7 +74,7 @@ exported from a **PostgreSQL vehicle telemetry database**.
 
 # IMPORTANT
 
-Open a Notepad from Start menu to save all Azure resources endpoint ,keys and connection values to use in differnet tasks of the labs
+Open a Notepad from Start menu to save all Azure resources endpoint ,keys and connection values to use in different tasks of the labs
 
 
 ## Exercise 1 : Deploy the resources in Azure 
@@ -116,7 +116,7 @@ Azure data factory
 
    ![A screenshot of a computer screen AI-generated content may be incorrect.](./media/image4.png)
 
-6.  Run below setup script to deploy all the required resources.for the prompt Enter the name of an existing Azure Resource Group: enter
+6.  Run below setup script to deploy all the required resources.For the prompt Enter the name of an existing Azure Resource Group: enter
     +++@lab.CloudResourceGroup(ResourceGroup1).Name+++. The deployment take20-30 to deploy all resources.
 
   +++./setup.sh+++
@@ -156,7 +156,7 @@ incorrect.](./media/image15.png)
   ![A screenshot of a computer program AI-generated content may be
 incorrect.](./media/image2002.png)
 
-7. open a Notepad from Start menu and save it on Dekstop with  the name +++env_varaiable+++
+7. open a Notepad from Start menu and save it on Desktop with  the name +++env_varaiable+++
 8. Add below variable into the notepad.
    
     ```
@@ -189,13 +189,13 @@ incorrect.](./media/image2002.png)
     AML_MODEL_API_key=<MODEL Deployment key from fleet_aml_training.ipynb>
     ```  
 
-9. Switch back Azure portal  and repalce **your-workspace-name** with your AML workspace name in the below command  and then run to get AML's object id (Note : Open notepad  and copy the below command to update )
+9. Switch back Azure portal  and replace  **your-workspace-name** with your AML workspace name in the below command  and then run to get AML's object id (Note : Open notepad  and copy the below command to update )
 
     +++az resource show  --resource-type "Microsoft.MachineLearningServices/workspaces" --name your-workspace-name --resource-group ResourceGroup1   --query "identity"+++
 
    ![](./media/image200.jpg)
 
-10. Repalce AML_principalId below command with the principalId id generated from above command and also repalce SUBSCRIPTION_ID with your Subscirption id and then run the command to assign the role.(Note : Open notepad  and copy the below command to update )
+10. Replace  AML_principalId below command with the principalId id generated from above command and also replace  SUBSCRIPTION_ID with your Subscription id and then run the command to assign the role.(Note : Open notepad  and copy the below command to update )
 
   +++az role assignment create --assignee AML_principalId --role "Azure Container Instances Contributor Role"  --scope /subscriptions/SUBSCRIPTION_ID/resourceGroups/resourcegroup1+++
 
@@ -224,8 +224,7 @@ incorrect.](./media/image2002.png)
   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image20.png)
 
 
-4.  Expand Essentials and copy Subscription ID and paste in the
-    environment vaiable notepad next to **SUBSCRIPTIONID** variable.
+4.  Expand Essentials and copy Subscription ID and paste in the environment variable notepad next to **SUBSCRIPTIONID** variable.
 
  ![](./media/image250.png)
  
@@ -304,7 +303,7 @@ incorrect.](./media/image2002.png)
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image23.png)
 
-4.  Click on **Server parameters** and seach for +++extensions+++. Select **Vector** and **azure-ai** extensions and then click on **Save**
+4.  Click on **Server parameters** and search for +++extensions+++. Select **Vector** and **azure-ai** extensions and then click on **Save**
 
   ![](./media/image24.png)
 
@@ -463,7 +462,7 @@ incorrect.](./media/image35.png)
 
 # Exercise 2 : Use ADF to clean the data and load it into PostgreSQL.
 
-## Task 1 : Create a Azure Postgresql conneciton
+## Task 1 : Create a Azure Postgresql connection
 
 1.  Switch back to Resource group and select **Azure Datafactory**
     resource.
@@ -1081,7 +1080,7 @@ incorrect.](./media/image180.png)
 
 ### Task 1 : Build fleetguard app locally
 
-1.  Create +++fleetapp+++ folder on your vm desktop.
+1.  Create +++fleetapp+++ folder on your vm Desktop.
 
   ![A screenshot of a computer AI-generated content may be  incorrect.](./media/image183.png)
 
@@ -1117,7 +1116,7 @@ incorrect.](./media/image189.png)
 
   ![A screenshot of a computer AI-generated content may be  incorrect.](./media/image190.png)
 
-8.  Run below dependencis in terminal
+8.  Run below dependencies in terminal
 
   +++pip install openai==0.28+++
 
@@ -1294,11 +1293,11 @@ incorrect.](./media/image207.png)
 
   - **Identity provider** : **Microsoft**
 
-  - **Client secret expiration** : **90 dayes**
+  - **Client secret expiration** : **90 days**
 
   ![](./media/image229.png)
 
-12. Click on **Add permission**. Expand **Applicaions** , select **Application.ReadWrite.All Read and write all applications** check box
+12. Click on **Add permission**. Expand **Applications** , select **Application.ReadWrite.All Read and write all applications** check box
     and then click on Update permissions.
 
   ![](./media/image230.png)
@@ -1316,7 +1315,7 @@ incorrect.](./media/image232.png)
 
   ![](./media/image233.png)
 
-2.  App opens in new tab. Wait and click on Accetp.
+2.  App opens in new tab. Wait and click on Accept.
 
   ![](./media/image234.png)
 
