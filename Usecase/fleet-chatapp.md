@@ -917,7 +917,7 @@ incorrect.](./media/image140.png)
 
   ![](./media/image142.png)
 
-3.  **Create fields as per below table**
+3.  **Add fields as per below table**. move Step 4 to add vector search profiles for embedding field.
 
 
   |**Field Name**|**Data Type**|**Searchable**|**Filterable**|**Sortable**|**Facetable**|**Retrievable**|**Dimentions**|
