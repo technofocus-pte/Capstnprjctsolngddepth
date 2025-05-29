@@ -912,11 +912,12 @@ incorrect.](./media/image140.png)
 
   ![](./media/image142.png)
 
-3.  **Add fields as per below table**. move Step 4 to add vector search profiles for embedding field.
+3.  **Add fields as per below table**. move Step 4 to add vector search profiles for embedding field.Id filed was added by default but please select Searchable,Filterable,Sortable and Retrievable checkboxes for the **id** field
 
 
   |**Field Name**|**Data Type**|**Searchable**|**Filterable**|**Sortable**|**Facetable**|**Retrievable**|**Dimentions**|
   |--|--|--|--|--|--|--|--|
+  |+++id+++|Edm.String|yes|yes|yes|No|yes||
   |+++filename+++|Edm.String|yes|yes|yes|No|yes||
   |+++content+++|Edm.String|Yes|No|No|No|Yes||
   |+++embedding+++|Collection(Edm.Single)|Yes|No|No|No|Yes|+++1536+++|
