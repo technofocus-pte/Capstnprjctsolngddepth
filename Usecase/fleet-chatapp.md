@@ -991,6 +991,8 @@ incorrect.](./media/image158.png)
 
 2.  Search for +++gpt+++ model and select **gpt-35-turbo** and then click on **Confirm**.
 
+ (Note : The gpt-35-turbo model will be retired on July 15th. If you are testing this lab after that date, please select any available chat model supported in your resource region. Make sure to update al l places inthe lab with the model youa re using )
+
   ![](./media/image160.png)
 
 3.  Keep all the default values and then click on **Deploy** button.
