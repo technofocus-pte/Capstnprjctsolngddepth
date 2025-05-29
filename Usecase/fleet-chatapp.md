@@ -1115,7 +1115,7 @@ incorrect.](./media/image189.png)
 
 7.  Run below command in the terminal to navigate to the folder.
 
-  +++cd .\TFFleetOptmztn\chatapp\+++
+  +++cd .\TFFleetOptmztn\chatapp+++
 
   ![A screenshot of a computer AI-generated content may be  incorrect.](./media/image190.png)
 
