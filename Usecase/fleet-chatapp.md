@@ -1216,7 +1216,7 @@ incorrect.](./media/image204.png)
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image207.png)
 
-3.  Enter unique name (+++fleetguardXXXXX+++- XXXXX can be unique number)for your app and press Enter.
+3.  Enter unique name ++++fleetguard@lab.labInstance.Id+++ for your app and press Enter.
 
   ![](./media/image208.png)
 
