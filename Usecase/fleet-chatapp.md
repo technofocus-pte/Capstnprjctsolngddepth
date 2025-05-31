@@ -1217,7 +1217,7 @@ incorrect.](./media/image204.png)
 
   ![](./media/image206.png)
 
-2.  Select a any **Central US/West US/East US2** region to deploy your app
+2.  Select only  **West US** region to deploy your app.
 
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image207.png)
