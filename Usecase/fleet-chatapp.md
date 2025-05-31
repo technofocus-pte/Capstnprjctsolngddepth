@@ -913,7 +913,9 @@ incorrect.](./media/image140.png)
 
   ![](./media/image142.png)
 
-3.  **Add fields as per below table**. move Step 4 to add vector search profiles for embedding field.Id filed was added by default but please select Searchable,Filterable,Sortable and Retrievable checkboxes for the **id** field
+3. Id filed was added by default ,select **Searchable**,**Filterable**,**Sortable** and **Retrievable** checkboxes for the **id** field
+
+4.  **Add fields as per below table**. move Step 4 to add vector search profiles for embedding field.
 
 
   |**Field Name**|**Data Type**|**Searchable**|**Filterable**|**Sortable**|**Facetable**|**Retrievable**|**Dimentions**|
@@ -928,27 +930,27 @@ incorrect.](./media/image140.png)
   ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image144.png)
 
-4.  Enter Dimensions as +++1536+++ and then click on Create under **No vector search profile**
+5.  Enter Dimensions as +++1536+++ and then click on Create under **No vector search profile**
 
   ![](./media/image145.png)
 
-5.  Click on **Create** under **Vector Profile**.
+6.  Click on **Create** under **Vector Profile**.
 
   ![](./media/image146.png)
 
-6.  Keep default values and then click on **Save** under **Vector  algorithm**
+7.  Keep default values and then click on **Save** under **Vector  algorithm**
 
   ![](./media/image147.png)
 
-7.  Click on **Save** under **Vector Profile**
+8.  Click on **Save** under **Vector Profile**
 
   ![](./media/image148.png)
 
-8.  Click on **Save** in **Index Field** section.
+9.  Click on **Save** in **Index Field** section.
 
   ![](./media/image149.png)
 
-9.  Once all fields and settings are filled in, click **"Create"**.
+10.  Once all fields and settings are filled in, click **"Create"**.
 
   ![](./media/image150.png)
 
