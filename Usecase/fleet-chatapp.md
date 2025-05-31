@@ -483,10 +483,11 @@ incorrect.](./media/image35.png)
 5.  Enter below values and then click on Test connection.
 
   - Name: +++PostgreSQLLinkedService+++
-  - Server Name: Select your PostgreSQL server name (e.g., <yourserver>.postgres.database.azure.com).
   - Version : **1.0**
+  - Azure Subscription - Select your Azure Subscription
+  - Server Name: Select your PostgreSQL server name (e.g., <yourserver>.postgres.database.azure.com).
   - Database Name: **flexibleserverdb**.
-  - Authentication: Provide the username and password.(+++citus+++ – +++Fhtest208+++
+  - Authentication: Provide the username- +++citus+++  and password- +++Fhtest208+++
   - Encryption Method : **SSL**
   - Click **Test Connection** to verify.
 
