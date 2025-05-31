@@ -884,12 +884,11 @@ incorrect.](./media/image135.png)
 
 ## Task 1 : Configure settings in Azure AI search service
 
-1.  Click on Resource group name and then select your Azure Search
-    service.
+1.  Click on Resource group name and then select your **Azure Search** service.
 
   ![](./media/image136.png)
 
-2.  Select Identity under Settings , ON the status and save it.
+2.  Select **Identity** under **Settings** , **ON** the status and save it.
 
   ![](./media/image137.png)
 
