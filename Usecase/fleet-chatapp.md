@@ -119,6 +119,8 @@ Azure data factory
 6.  Run below setup script to deploy all the required resources.For the prompt Enter the name of an existing Azure Resource Group: enter
     +++@lab.CloudResourceGroup(ResourceGroup1).Name+++. The deployment take20-30 to deploy all resources.
 
+    >>Note : While the script is running, you can open the Azure portal in a new tab and capture the keys for the resources being created as per Task 2. Keep switching between the script tab and the second tab to capture the required information.
+
   +++./setup.sh+++
 
    ![A screenshot of a computer screen AI-generated content may be  incorrect.](./media/image5.png)
