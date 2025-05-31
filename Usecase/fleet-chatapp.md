@@ -841,7 +841,9 @@ incorrect.](./media/image123.png)
 
   ![A screenshot of a computer program AI-generated content may be incorrect.](./media/image125.png)
 
-22. Now Deploy the model as a web service .Run the cell. Deployment takes 10-15 minutes to complete.
+22. Now Deploy the model as a web service .Run the cell. Deployment takes 15-20 minutes to complete.
+    
+>>Note : While the model is deploying, you can proceed to the next task to create an index in Azure Search service
 
   ![A screenshot of a computer AI-generated content may be incorrect.](./media/image126.png)
 
