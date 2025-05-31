@@ -168,10 +168,7 @@ incorrect.](./media/image2002.png)
     AML_WORKSPACE_NAME=<YOUR AML_WORKSPACE>
     AML_COMPUTE_INSTANCE=<YOUR COMPUTE INSTANCE>
     AML_CLUSTER=amlccfg-aml-cluster
-    
-    AZURE_ML_ENDPOINT=<AZURE AML ENDPOINT>
-    AZURE_ML_API_KEY=<AML  API KEY>
-    
+           
     PG_HOST=<POSTGRESQL HOST>
     PG_DB=flexibleserverdb
     PG_USER=citus
