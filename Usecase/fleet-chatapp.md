@@ -729,7 +729,7 @@ content may be incorrect.](./media/image61.png)
 
   ![](./media/image95.png)
 
-3.  Click on **Compute** from left navigation menu .Select the compute instance and select on **Notebook**.
+3.  Click on **Compute** from left navigation menu .Select the compute instance and select on **Terminal**.
 
   ![](./media/image96.png)
 
