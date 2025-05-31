@@ -802,7 +802,7 @@ incorrect.](./media/image114.png)
 
   ![](./media/image115.png)
 
-15. Run the cell to run an experiment on remote compute
+15. Run the cell to run an experiment on remote compute. it takes 3-5 minutes to run the experiment
 
 16. Run the cell to get the cluster.
 
