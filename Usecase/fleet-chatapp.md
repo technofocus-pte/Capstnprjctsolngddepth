@@ -1192,12 +1192,15 @@ incorrect.](./media/image200.png)
 
   ![](./media/image201.png)
 
-2.  Click on **Azure** icon from left navigation menu and select **Sign
-    in to Azure**.
+2.  Click on **Azure** icon from left navigation menu and select **Sign in to Azure**.
 
   ![](./media/image202.png)
 
 3.  Click on **Allow**.Sign in with your assigned account.
+
+  - **Username**: +++@lab.CloudPortalCredential(User1).Username+++
+
+  - **Password**: +++@lab.CloudPortalCredential(User1).Password+++
 
   ![](./media/image203.png)
 
