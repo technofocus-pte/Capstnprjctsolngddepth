@@ -1224,19 +1224,19 @@ incorrect.](./media/image207.png)
 
 3.  Enter unique name ++++fleetguard@lab.labInstance.Id+++ for your app and press Enter.
 
-  ![](./media/image208.png)
+  ![](./media/appname.png)
 
 4.  Select **Python 3.10**
 
   ![](./media/image209.png)
 
-5.  Select Basic price tier.
+5.  Select **Basic** price tier.
 
   ![](./media/image210.png)
 
 6.  Wait for the app to create.
 
-  ![](./media/image211.png)
+  ![](./media/appcreation.png)
 
 ### Task 4 : Deploy the App
 
@@ -1254,7 +1254,7 @@ incorrect.](./media/image207.png)
 
 4.  Wait for the deployment to complete.
 
-  ![](./media/image215.png)
+  ![](./media/deploy.png)
 
 ### Task 5 : Configure the fleet app.
 
