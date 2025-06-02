@@ -1292,7 +1292,7 @@ incorrect.](./media/image207.png)
 
    ![](./media/image224.png)
 
-9. Click on identity from left navigation menu, On the status and  Save-> Yes
+9. Click on **identity** from left navigation menu, On the status and  **Save->Yes**
 
    ![](./media/image227.png)
 
